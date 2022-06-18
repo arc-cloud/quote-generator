@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:wght@300&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: #635f5f;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0;
+  margin: 0;
   color: white;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+#title {
+  font-size: 20px;
+  border-bottom: 2px solid crimson;
+  margin-top: -100px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#title span {
+  font-size: 24px;
+  font-family: 'Pacifico', cursive;
+  color: crimson;
+}
+
+#quote-box {
+  background: rgb(53, 53, 85);
+  max-width: 90%;
+  min-width: 70%;
+  height: auto;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#text {
+  margin-top: 100px;
+  padding: 20px;
+
+}
+
+#author {
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 40%;
+}
+
+#border {
+  width: 90%;
+  height: 1px;
+  background: white;
+  margin: 10px;
+}
+#buttons {
+  display: flex;
+
+}
+
+#new-quote, #tweet {
+  width: 50px;
+  aspect-ratio: 1;
+  margin: 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: crimson;
+  color: white;
+  font-family: 'Pacifico', 'Ubuntu';
+  font-size: 16px;
+  vertical-align: middle;
+  line-height: 50px;
+  transition: all 0.3s ease;
+}
+
+#tweet {
+  font-size: 20px;
+  background: blue;
+  text-align: center;
+}
+
+#tweet-quote {
+  color: white;
+  text-decoration: none;
+  padding-top: 20px;
 }
