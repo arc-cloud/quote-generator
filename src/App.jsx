@@ -113,7 +113,7 @@ const App = () => {
             <FontAwesomeIcon icon={ faArrowsRotate } />
           </button>
           <div id="tweet">
-            <a href="https://twitter.com/intent/tweet" id="tweet-quote" target="_blank">
+            <a href="https://twitter.com/intent/tweet" id="tweet-quote" target="_blank" rel="noopener">
               <FontAwesomeIcon icon={ faTwitter } />
             </a>
           </div>
