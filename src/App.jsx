@@ -99,7 +99,7 @@ const App = () => {
     <>
       {/* Title */}
       <div id="title">
-        <span>.io</span> | Random Quote Generator
+        <span>arc</span> | Random Quote Generator
       </div>
       
       <div id="quote-box">

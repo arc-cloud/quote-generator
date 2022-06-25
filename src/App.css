@@ -17,15 +17,16 @@
 
 #title {
   font-size: 20px;
-  border-bottom: 2px solid #08F;
+  border-bottom: 2px solid white;
   margin-top: -100px;
   margin-bottom: 10px;
 }
 
 #title span {
   font-size: 24px;
-  font-family: 'Pacifico', cursive;
-  color: #08F;
+  font-weight: 800;
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
 }
 
 #quote-box {
