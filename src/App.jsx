@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import quotes from './quotes.json';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,8 +20,8 @@ const App = () => {
     
     /* Input the quote and the author in the fields */
     if (quote_field && author_field) {
-      quote_field.innerText = quote;
-      author_field.innerText = author;
+      author_field.innerText = '~ ' + author;
+      quote_field.innerText = '" ' + quote + ' "';
     }
   };
   
@@ -99,7 +99,7 @@ const App = () => {
     <>
       {/* Title */}
       <div id="title">
-        <span>arc</span> | Random Quote Generator
+        <span>arc</span> | random quote generator
       </div>
       
       <div id="quote-box">
@@ -113,7 +113,7 @@ const App = () => {
             <FontAwesomeIcon icon={ faArrowsRotate } />
           </button>
           <div id="tweet">
-            <a href="twitter.com/intent/tweet" id="tweet-quote">
+            <a href="https://twitter.com/intent/tweet" id="tweet-quote" target="_blank">
               <FontAwesomeIcon icon={ faTwitter } />
             </a>
           </div>
